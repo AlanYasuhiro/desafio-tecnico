@@ -1,5 +1,5 @@
 # Desafio Quality Assurance Sênior
-   Este projeto utiliza o framework de automação Cypress para realizar testes automatizados na página de login de empréstimos do PicPay (https://meus-emprestimos.picpay.com/). O objetivo validar alguns cenários como campos obrigatórios e mensagens de erro.
+   Este projeto utiliza o framework de automação Cypress para realizar testes automatizados na página de login de empréstimos do PicPay (https://meus-emprestimos.picpay.com/). O objetivo é validar alguns cenários como campo obrigatório e mensagens de erro.
 
 ## Pré requisitos
    Node.js: Versão >= v18 (https://nodejs.org/en/download)
@@ -33,7 +33,7 @@
    |   |-- page/
    |   |   |-- loginPage.js  # Arquivo com as ações feitas nos testes      
    |   |-- reports/          # Relatório e screenshots gerados
-   |   |   |-- screenshots/  # Capitura de tela dos testes
+   |   |   |-- screenshots/  # Captura de tela dos testes
    |   |   |-- html/         # Relatório em HTML com os resultados   
    |   |-- support/          # Arquivos de suporte e comandos personalizados
    |   |   |-- commands.js   # Arquivo com comandos personalizados
@@ -51,4 +51,12 @@
 
  
  ## Relatório dos testes executados
-   Após executar os testes pelo comando 'npx cypress run html-report', irá gerar um relatório .html na pasta reports/html. O nome do arquivo é login-report-YYYY-MM-DDTHH:MM:SS.html. Exemplo: login-report-2025-01-19T075118-0300.html
+   Após executar os testes, um relatório em HTML será gerado na pasta cypress/reports/html. O nome do arquivo segue o padrão:
+```
+login-report-YYYY-MM-DDTHH:MM:SS.html
+```
+Exemplo:
+```
+login-report-2025-01-19T075118-0300.html
+```
+Para visualizar o relatório, basta abrir o arquivo no navegador.
